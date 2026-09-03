@@ -5,10 +5,7 @@
         <script>
           (function() {
             var theme = localStorage.getItem('theme');
-            if (theme === 'dark') {
-              document.documentElement.classList.add('dark-mode');
-            } else if (theme === 'light') {
-              document.documentElement.classList.remove('dark-mode');
+            if (theme === 'dark') { document.documentElement.classList.add('dark-mode'); } else { // Default to light mode document.documentElement.classList.remove('dark-mode'); }
             // } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             //   document.documentElement.classList.add('dark-mode');
             }
